@@ -1,13 +1,16 @@
-.barre_separation {
-  margin: 2rem 0;
+/* 🌞 Style clair */
+[data-theme="light"] {
+	--bg-color: #ececec;
+	--text-color: #212121;
 }
 
-.image-texte {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
+/* 🌚 Style sombre */
+[data-theme="dark"] {
+	--bg-color: #212121;
+	--text-color: #ececec;
+}
+
+html {
+	background-color: var(--bg-color);
+	color: var(--text-color);
 }
