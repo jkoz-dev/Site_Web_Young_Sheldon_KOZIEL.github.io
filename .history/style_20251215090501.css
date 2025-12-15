@@ -36,14 +36,17 @@ button {
 }
 
 hr {
+    /* Utilise la couleur du texte (Noir en clair, Blanc en sombre) */
     background-color: var(--text-color);
     color: var(--text-color);
-    height: 1px;
-    opacity: 1;
-}
+    /* Compatibilité supplémentaire */
 
-.table, .table tr, .table th, .table td {
-    background-color: transparent;
-    color: var(--text-color);
-    border-color: var(--text-color);
+    /* Enlève les bordures par défaut de Bootstrap */
+    border: none;
+
+    /* Définit l'épaisseur */
+    height: 1px;
+
+    /* Opacité : 1 = couleur pleine (très visible), 0.5 = semi-transparent (plus discret) */
+    opacity: 1;
 }

@@ -42,8 +42,18 @@ hr {
     opacity: 1;
 }
 
-.table, .table tr, .table th, .table td {
-    background-color: transparent;
-    color: var(--text-color);
-    border-color: var(--text-color);
+/* --- PARTIE SPÉCIALE TABLEAU --- */
+
+/* 1. On applique les couleurs de texte variables au tableau */
+.table {
+    color: var(--text-color) !important;
+    border-color: var(--border-color) !important;
+}
+
+/* 2. EN MODE SOMBRE SEULEMENT : On enlève le fond blanc par défaut de Bootstrap */
+[data-theme="dark"] .table > :not(caption) > * > * {
+    background-color: transparent !important; /* Le fond devient celui du body (noir) */
+    color: var(--text-color) !important;
+    border-color: var(--border-color) !important;
+    box-shadow: none !important;
 }

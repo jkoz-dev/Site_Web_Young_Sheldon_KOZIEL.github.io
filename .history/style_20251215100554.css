@@ -43,7 +43,7 @@ hr {
 }
 
 .table, .table tr, .table th, .table td {
-    background-color: transparent;
-    color: var(--text-color);
-    border-color: var(--text-color);
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    border-color: var(--text-color) !important;
 }

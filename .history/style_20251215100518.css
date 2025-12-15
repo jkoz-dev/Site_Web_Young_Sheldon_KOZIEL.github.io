@@ -42,8 +42,13 @@ hr {
     opacity: 1;
 }
 
-.table, .table tr, .table th, .table td {
-    background-color: transparent;
-    color: var(--text-color);
-    border-color: var(--text-color);
+.table> :not(caption)>*>* {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    border-color: var(--border-color) !important;
+    box-shadow: none !important;
+}
+
+.table {
+    border-color: var(--border-color) !important;
 }

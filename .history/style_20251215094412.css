@@ -42,8 +42,4 @@ hr {
     opacity: 1;
 }
 
-.table, .table tr, .table th, .table td {
-    background-color: transparent;
-    color: var(--text-color);
-    border-color: var(--text-color);
-}
+

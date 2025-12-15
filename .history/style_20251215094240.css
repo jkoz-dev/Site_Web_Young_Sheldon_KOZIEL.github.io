@@ -42,8 +42,8 @@ hr {
     opacity: 1;
 }
 
-.table, .table tr, .table th, .table td {
-    background-color: transparent;
-    color: var(--text-color);
-    border-color: var(--text-color);
+tr:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    transition: background-color 0.3s, color 0.3s;
 }

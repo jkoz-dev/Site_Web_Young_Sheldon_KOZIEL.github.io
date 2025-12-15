@@ -42,8 +42,24 @@ hr {
     opacity: 1;
 }
 
-.table, .table tr, .table th, .table td {
-    background-color: transparent;
-    color: var(--text-color);
-    border-color: var(--text-color);
+/* --- LE SECRET POUR LE TABLEAU --- */
+
+/* Ce sélecteur cible TOUTES les cellules (th, td) du tableau */
+.table > :not(caption) > * > * {
+    /* 1. On rend le fond transparent pour qu'il prenne la couleur du body */
+    background-color: transparent !important; 
+    
+    /* 2. On force le texte à prendre ta variable de couleur */
+    color: var(--text-color) !important;
+    
+    /* 3. On force les bordures à prendre ta variable de bordure */
+    border-color: var(--border-color) !important;
+    
+    /* 4. On supprime les ombres internes par défaut de Bootstrap */
+    box-shadow: none !important;
+}
+
+/* Style global du tableau */
+.table {
+    border-color: var(--border-color) !important;
 }
